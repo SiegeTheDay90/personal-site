@@ -3914,3 +3914,7 @@ input, select, textarea {
 			max-width: 300px;
 			border-radius: 5px;
 		}
+
+		.contact-logo {
+			font-size: 2.2em;
+		}
