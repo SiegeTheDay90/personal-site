@@ -1,0 +1,13 @@
+@use './scripts/main.scss';
+@use './scripts/navbar.scss';
+
+body{
+    display: flex;
+    margin: 0;
+}
+
+h1, p{
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 0;
+}

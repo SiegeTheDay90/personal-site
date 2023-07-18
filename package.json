@@ -1,0 +1,30 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "prod": "webpack --mode=production",
+    "watch": "webpack -w --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiegeTheDay90/personal-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiegeTheDay90/personal-site/issues"
+  },
+  "homepage": "https://github.com/SiegeTheDay90/personal-site#readme",
+  "dependencies": {
+    "css-loader": "^6.8.1",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

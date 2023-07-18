@@ -1,183 +1,34 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Clarence Smith</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#two">Skills</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
+<!DOCTYPE html>
+<html lang="en">
+    <script src="./dist/main.js" defer></script>
+    <head>
+        <title>Clarence Smith</title>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/a65848e44c.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="icon" href="favicon.ico" type="image/png"> -->
+    </head>
+      
+    <body id="body">
+		<aside id="navbar">
+			<nav>
+				<a href="#one">About Me</a>
+				<a href="#two">Projects</a>
+				<a href="#three">Technologies</a>
+			</nav>
+		</aside>
+		<main>
+			<section class="page" id="one">
+				<h1>I'm Clarence Smith,</h1>
+				<p>an educator with a passion for technology and software development. My interest in software and coding started with love of retro games, consoles and emulation. I've made a couple of JavaScript games and am currently learning the game engine Godot.</p>
+				<p>I am also a capable full stack developer, able to use React.js and Sass for frontend development and frameworks like Express.js or Ruby on Rails for backend development.</p>
+				<p>Check out my full stack projects and games below!</p>
+				<img src="" alt="Clarence"/>
 			</section>
+			<section class="page" id="two">Projects</section>
+			<section class="page" id="three">Technologies</section>
+		</main>
+    </body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner" >
-							<h1>I'm Clarence Smith,</h1>
-							<p>a former educator with a passion for technology and software development. My interest in software and coding started with love of retro games, consoles and emulation. I even made a game inspired by Missile Command. Check it out along with some full stack projects I've worked on!</p>
-							<p>I am currently completing the Advent of Code challenge and uploading my solutions <a href="https://github.com/SiegeTheDay90/Advent-of-code-2022" target="_blank">to Github</a>, alternating between Ruby, Python, and JavaScript!</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-								<li><a href="https://github.com/SiegeTheDay90/Advent-of-code-2022" target="_blank" class="button">Advent of Code</a></li>
-							</ul>
-							<img src="images/profile.jpg" alt="Profile Pic" />
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<span class="image"><img src="images/Trnkt.png" alt="Trnkt" data-position="center center"/></span>
-							<div class="content">
-								<div class="inner">
-									<h2>Trnkt (Etsy Clone)</h2>
-									Trnkt is an e-commerce app inspired by Etsy. On Trnkt, users can find and view shops and products based on recommended collections or by using the search bar. React/Redux, Ruby on Rails, and postgreSQL are all used to display, serve and store the information.
-									<ul class="actions">
-										<li><a href="https://trnkt-2022.herokuapp.com/" class="button" target="_blank">Visit Trnkt</a></li>
-										<li><a href="https://github.com/SiegeTheDay90/Trnkt" class="button" target="_blank">Github Repo</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<span class="image"><img src="images/Interceptor.png" alt="Trnkt" data-position="center center"/></span>
-							<div class="content">
-								<div class="inner">
-									<h2>Interceptor (Game)</h2>
-									Interceptor is a browser game inspired by the classic arcade game Missile Command. It is written entirely Vanilla Javascript. I am still looking for ideas for new enemy types!
-									<ul class="actions">
-										<li><a href="https://siegetheday90.github.io/Interceptor/" class="button" target="_blank">Play Interceptor</a></li>
-										<li><a href="https://github.com/SiegeTheDay90/Interceptor" class="button" target="_blank">Github Repo</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<span class="image"><img src="images/RisingSign.png" alt="Trnkt" data-position="center center"/></span>
-							<div class="content">
-								<div class="inner">
-									<h2>Rising Sign</h2>
-									Rising Sign is a social media and dating app. This project was built with a team on which I was the flex developer, working on both frontend and backend functionality, using the MERN stack.
-									<ul class="actions">
-										<li><a href="https://rising-sign.onrender.com/" class="button" target="_blank">Visit RisingSign</a></li>
-										<li><a href="https://github.com/muharremb/mern-risingsign" class="button" target="_blank">Github Repo</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>My Skills</h2>
-							<p>I have experience building full-stack applications using languages and tools that include:</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>React.js</h3>
-									<p>functional components make up the frontend of Trnkt and RisingSign</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>SQL/NoSQL</h3>
-									<p>Trnkt uses a SQL (postgreSQL) database while Interceptor and RisingSign use NoSQL (Firestore & MongoDB)</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Express.js</h3>
-									<p>used for the RisingSign backend server</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-gem"></span>
-									<h3>Ruby on Rails</h3>
-									<p>used for the Trnkt backend server</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>CSS</h3>
-									<p>used to style all the pages</p>
-								</section>
-								<section>
-									<span class="icon major solid fa-link"></span>
-									<h3>HTML</h3>
-									<p>used to build the Interceptor page, and everything else!</p>
-								</section>
-							</div>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
-						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<div class="split style1">
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>City</h3>
-											Queens, New York<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">ClarenceSmith90@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(646) 374-7244</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/SiegeTheDay90" class="contact-logo icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/clarence-smith-nyc/" class="contact-logo icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; 2022. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
+
