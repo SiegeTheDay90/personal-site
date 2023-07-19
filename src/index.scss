@@ -1,0 +1,13 @@
+@use './styles/fonts.scss';
+@use './styles/main.scss';
+@use './styles/navbar.scss';
+
+body{
+    display: flex;
+    margin: 0;
+}
+
+h1, p{
+    box-sizing: border-box;
+    margin: 0;
+}
