@@ -7,6 +7,10 @@
     @return rgba(17, 0, 255, $opacity);
 }
 
+@mixin glow($color){
+    text-shadow: 1px 0 5px $color, -1px 0 5px $color, 0 1px 5px $color, 0 -1px 5px $color;
+}
+
 main {
     width: 100%;
     height: 100vh;
@@ -18,17 +22,8 @@ main {
         display: none;
     }
     glow {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        @include glow(rgba(255, 255, 255, 0.3));
     }
-}
-
-yellow {
-    text-shadow: 1px 0 4px yellow(0.75), -1px 0 4px yellow(0.75), 0 1px 4px yellow(0.75), 0 -1px 4px yellow(0.75);
-    color: yellow(1);
-}
-blue {
-    text-shadow: 1px 0 4px blue(0.6), -1px 0 4px blue(0.6);
-    color: blue(1);
 }
 
 .page {
@@ -40,6 +35,7 @@ blue {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    color: rgb(215, 215, 215);
 }
 
 .thumbnail {
@@ -51,7 +47,6 @@ blue {
 }
 .main-text {
     max-width: 900px;
-    color: rgb(215, 215, 215);
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -64,18 +59,60 @@ blue {
     h1{
         font-size: xx-large;
     }
+    a{
+        color: white;
+        text-decoration: none;
+        @include glow(rgba(255, 255, 255, 0.6));
+        border-bottom: 1px dashed rgb(215, 215, 215);
+        &:hover{
+            border-bottom-style: solid;
+        }
+    }
 }
 
 #one{
     .thumbnail{
         position: relative;
-        margin: auto 0;
+        margin-top: 2vh;
         margin-left: 3vw;
+    }
+    .main-text, img{
+        position: relative;
+        top: 10%;
     }
 }
 
 #two{
     background-color: rgb(21, 21, 21);
+    position: relative;
+    #projects-grid{
+        max-width: 900px;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3vw;
+        margin-top: 2vh;
+        .projects-grid-item{
+            padding: 5px;
+            width: 33%;
+            height: 75%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid rgba(125, 125, 125);
+            .img-container{
+                position: relative;
+                width: 100%;
+                height: 65%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 }
 #three{
     background-color: rgb(22, 22, 22);

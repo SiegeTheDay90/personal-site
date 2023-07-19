@@ -5,14 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const navlinks = document.getElementById("navlinks").children
     let activeLink = navlinks[0];
 
+    document.querySelector('main').addEventListener('scrollend', (e) => {
+        const top = document.querySelector('main').scrollTop;
 
-    for(let i = 0; i < navlinks.length; i++){
-        const link = navlinks[i];
+        const active = top/document.querySelector('main').clientHeight;
 
-        link.addEventListener('click', (e) => {
-            activeLink.classList.remove('active');
-            link.classList.add('active');
-            activeLink = link;
-        })
-    }
+        navlinks[active].classList.add('active');
+        activeLink = navlinks[active];
+    });
+
+    document.querySelector('main').addEventListener('scroll', (e) => {
+        activeLink.classList.remove('active');
+    });
 })
