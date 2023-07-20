@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('main').addEventListener('scrollend', (e) => {
         const top = document.querySelector('main').scrollTop;
 
-        const active = top/document.querySelector('main').clientHeight;
-
+        const active = Math.round(top/document.querySelector('main').clientHeight);
         navlinks[active].classList.add('active');
         activeLink = navlinks[active];
     });
