@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans&display=swap');
+
 #three{
     .main-text{
         h1{
@@ -10,6 +12,7 @@
     padding-left: 5vw;
 }
 .skills-list-item{
+    font-family: 'Montserrat', sans-serif;
     list-style: none;
     position: relative;
     font-size: 3vh;
@@ -17,6 +20,23 @@
     .icon {
         position: absolute;
         fill: white;
-        left: -28px;
+        left: -5vh;
+    }
+    .fa-react{
+        color: #61DBFB;
+    }
+    .fa-sass{
+        color: #cd6799;
+    }
+    .fa-database{
+        color: rgb(255, 191, 72);
+    }
+    .fa-sitemap{
+        color: #77ff9b;
+    }
+    svg{
+        height: 3vh;
+        width: min-content;
+        fill: red;
     }
 }
