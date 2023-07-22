@@ -1,4 +1,8 @@
 #projects-grid{
+    // *{
+    //     user-select: none;
+    // }
+    cursor: pointer;
     width: 80%;
     height: 50%;
     display: flex;
@@ -46,65 +50,35 @@
     }
 }
 
-@keyframes grid-anim {
+@keyframes pulse {
     0%{
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.6);
     }
     16%{
         background-color: rgba(0, 0, 0, 0);
     }
 
     33%{
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    100%{
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.6);
     }
 }
 
-@mixin fade($num){
-    animation-name: grid-anim;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-delay: ($num - 1)*2s;
-}
-
-@mixin pulse-children{
-    &:nth-child(1)::before{
-        @include fade(1);
-    }
-    &:nth-child(2)::before{
-        @include fade(2);
-    }
-    &:nth-child(3)::before{
-        @include fade(3);
-    }
-    &:nth-child(4)::before{
-        @include fade(4);
-    }
-    &:nth-child(5)::before{
-        @include fade(5);
-    }
-    &:nth-child(6)::before{
-        @include fade(6);
+@mixin pulse-child($num){
+    &:nth-child(#{$num})::before{
+        animation-name: pulse;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-delay: ($num - 1)*2s;
     }
 }
 
 .projects-grid-item{
     position: relative;
-    @include pulse-children();
+    @for $i from 1 to 6{
+        @include pulse-child($i);
+    }
     &::before{
-        content: "";
-        width: 100%;
-        height:100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        box-sizing: border-box;
-        z-index: 1;
-        transition: 1s;
+        background-color: rgba(0, 0, 0, 0.6);
     }
 }
 
@@ -113,8 +87,8 @@
         animation: none;
     }
     .projects-grid-item:hover::before{
-        // transition: 0.4s;
         background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
     }
 }
 
@@ -129,7 +103,7 @@
     padding: 0;
     li{
 
-        background-color: rgba(125, 125, 125, 0.6);
+        background-color: rgba(125, 125, 125, 0.5);
         border-radius: 5px;
         padding: 1px 5px;
         font-size: 1.5vh;
