@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans&display=swap');
+
+$monsterrat: 'Montserrat', sans-serif;
+
 #projects-grid{
     // *{
     //     user-select: none;
@@ -57,7 +61,6 @@
     16%{
         background-color: rgba(0, 0, 0, 0);
     }
-
     33%{
         background-color: rgba(0, 0, 0, 0.6);
     }
@@ -73,8 +76,10 @@
 }
 
 .projects-grid-item{
+    font-family: 'Montserrat', sans-serif;
+    &:visited{color: inherit}
     position: relative;
-    @for $i from 1 to 6{
+    @for $i from 1 to 7{
         @include pulse-child($i);
     }
     &::before{
