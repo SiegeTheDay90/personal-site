@@ -1,6 +1,7 @@
 @import './fonts.scss';
 @import './projects-grid.scss';
 @import './skills.scss';
+@import './about-me.scss';
 
 @mixin glow($color){
     text-shadow: 1px 0 5px $color, -1px 0 5px $color, 0 1px 5px $color, 0 -1px 5px $color;
