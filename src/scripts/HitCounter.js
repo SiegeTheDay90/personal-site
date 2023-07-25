@@ -24,7 +24,11 @@ export default function HitCounter(){
         let fetchedDoc = await getDoc(docRef);
         const data = fetchedDoc?.data() || {count: 0};
         data.count += 1;
-        await setDoc(docRef, data)
+        setDoc(docRef, data).then(async ()=>{
+            const logRef = await doc(db, "Logs", String(Date.now()));
+            const data = navigator.userAgentData.toJSON();
+            setDoc(logRef, data);
+        })
         .catch((error) => console.error(error, "Send Error"));
     }
 
