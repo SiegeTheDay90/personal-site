@@ -1,7 +1,12 @@
 import "./index.scss";
+import HitCounter from "./scripts/HitCounter";
 "use string";
 
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    const counter = HitCounter();
+    counter.inc("Portfolio");
     const navlinks = document.getElementById("navlinks").children
     let activeLink = navlinks[0];
 
