@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 @mixin glow($color){
     text-shadow: 1px 0 5px $color, -1px 0 5px $color, 0 1px 5px $color, 0 -1px 5px $color;
 }
@@ -33,6 +35,7 @@
     font-size: 2vh;
     .contact{
         font-size: 7vh;
+        color: $red;
     }
     li{
         display: flex;
@@ -43,17 +46,17 @@
     z-index: 2;
 }
 
-.fa-envelope{
-    @include glow(rgba(255, 0, 0, 0.5));
-    color: rgb(255, 0, 0);
-}
+// .fa-envelope{
+//     @include glow(rgba(255, 0, 0, 0.5));
+//     color: rgb(255, 0, 0);
+// }
 
-.fa-linkedin{
-    @include glow(rgba(0, 0, 255, 0.5));
-    color: rgba(0,0,255);
-}
+// .fa-linkedin{
+//     @include glow(rgba(0, 0, 255, 0.5));
+//     color: rgba(0,0,255);
+// }
 
-.fa-github{
-    @include glow(rgba(255, 166, 0, 0.5));
-    color: black;
-}
+// .fa-github{
+//     @include glow(rgba(255, 166, 0, 0.5));
+//     color: black;
+// }

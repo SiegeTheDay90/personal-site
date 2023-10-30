@@ -2,23 +2,27 @@
 @import './projects-grid.scss';
 @import './skills.scss';
 @import './about-me.scss';
+@import './colors.scss';
+@import './mixins.scss';
 
-@mixin glow($color){
-    text-shadow: 1px 0 5px $color, -1px 0 5px $color, 0 1px 5px $color, 0 -1px 5px $color;
-}
 
 main {
     width: 100%;
     height: 100vh;
-    background-color: rgb(20, 20, 20);
+    background-color: $lighter-red;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow-y: scroll;
     &::-webkit-scrollbar{
         display: none;
     }
-    glow {
-        @include glow(rgba(255, 255, 255, 0.3));
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+            width: 50px;
+        }
     }
 }
 
@@ -31,7 +35,7 @@ main {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    color: rgb(215, 215, 215);
+    color: $red;
 }
 
 .thumbnail {
@@ -39,7 +43,7 @@ main {
     max-width: 19vw;
 }
 .rounded {
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 @keyframes slide-in {
@@ -61,23 +65,27 @@ main {
     line-height: 120%;
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
-    font-weight:lighter;
     animation: slide-in 0.3s linear;
     h1{
         font-size: 4vh;
     }
     a{
-        color: white;
+        color: $blue;
         text-decoration: none;
-        @include glow(rgba(255, 255, 255, 0.6));
-        border-bottom: 1px dashed rgb(215, 215, 215);
+        @include glow($lighter-red);
+        border-bottom: 1px dashed rgb(0, 0, 0);
         &:hover{
             border-bottom-style: solid;
         }
     }
 }
 
-#one{
+#projects{
+    background-color: $lighter-red;
+    position: relative;
+}
+
+#about-me {
     .thumbnail{
         position: relative;
         margin-top: 2vh;
@@ -89,11 +97,17 @@ main {
     }
 }
 
-#two{
-    background-color: rgb(21, 21, 21);
+#my-toolbox{
+    background-color: $lighter-red;
     position: relative;
-}
-#three{
-    background-color: rgb(22, 22, 22);
-    position: relative;
+    .main-text{
+        padding: 30px 0 0 30px;
+        border-radius: 60px;
+        background-color: $light-red;
+        li{
+            margin-bottom: 0;
+        }
+        color: $lighter-red;
+        height: 80%;
+    }
 }

@@ -1,0 +1,24 @@
+@mixin glow($color){
+    text-shadow: 1px 0 5px $color, -1px 0 5px $color, 0 1px 5px $color, 0 -1px 5px $color;
+}
+
+@keyframes pulse {
+    0%{
+        transform: rotate(0)
+    }
+    16%{
+        transform: rotate(20deg)
+    }
+    33%{
+        transform: rotate(-20deg)
+    }
+}
+
+@mixin pulse-child($num){
+    &:nth-child(#{$num})::before{
+        animation-name: pulse;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-delay: ($num - 1)*2s;
+    }
+}

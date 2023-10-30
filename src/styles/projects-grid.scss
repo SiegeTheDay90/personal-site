@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans&display=swap');
-
+@import './colors.scss';
+@import './mixins.scss';
 $monsterrat: 'Montserrat', sans-serif;
 
 #projects-grid{
@@ -33,7 +34,6 @@ $monsterrat: 'Montserrat', sans-serif;
         display: flex;
         align-items: center;
         flex-direction: column;
-        border: 1px solid rgba(125, 125, 125);
         .projects-title{
             font-size: 3vh;
         }
@@ -54,48 +54,25 @@ $monsterrat: 'Montserrat', sans-serif;
     }
 }
 
-@keyframes pulse {
-    0%{
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-    16%{
-        background-color: rgba(0, 0, 0, 0);
-    }
-    33%{
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-}
 
-@mixin pulse-child($num){
-    &:nth-child(#{$num})::before{
-        animation-name: pulse;
-        animation-duration: 12s;
-        animation-iteration-count: infinite;
-        animation-delay: ($num - 1)*2s;
-    }
-}
 
 .projects-grid-item{
     font-family: 'Montserrat', sans-serif;
-    &:visited{color: inherit}
     position: relative;
+    color: $red;
     @for $i from 1 to 7{
         @include pulse-child($i);
     }
-    &::before{
-        background-color: rgba(0, 0, 0, 0.6);
-    }
 }
 
-#projects-grid:hover{
-    .projects-grid-item::before{
-        animation: none;
-    }
-    .projects-grid-item:hover::before{
-        background-color: rgba(0, 0, 0, 0);
-        box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
-    }
-}
+// #projects-grid:hover{
+//     .projects-grid-item::before{
+//         animation: none;
+//     }
+//     .projects-grid-item:hover::before{
+//         background-color: rgba(0, 0, 0, 0);
+//     }
+// }
 
 .projects-technologies{
     list-style: none;
@@ -106,12 +83,12 @@ $monsterrat: 'Montserrat', sans-serif;
     gap: 5px;
     margin: auto 0;
     padding: 0;
-    li{
+}
 
-        background-color: rgba(125, 125, 125, 0.5);
-        border-radius: 5px;
-        padding: 1px 5px;
-        font-size: 1.5vh;
-        // cursor: default;
-    }
+.project-technologies-item{
+    color: $lightest-red;
+    background-color: $light-red;
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 1.5vh;
 }

@@ -1,12 +1,14 @@
+@import './colors.scss';
+
 #navbar {
     // font-family: sans-serif;
     width: 16vw;
     height: 100vh;
     float: left;
-    background-color: rgb(41, 41, 41);
+    background-color: $red;
     display: flex;
     align-items: center;
-    box-shadow: -15px 0 16px 1px white;
+    box-shadow: -15px 0 16px 1px $red;
     z-index: 2;
     nav {
         height: 25vh;
@@ -21,7 +23,7 @@
             width: 100%;
             position: relative;
             text-decoration: none;
-            color: white;
+            color: $lighter-red;
             font-size: 4vh;
             box-sizing: border-box;
             overflow: visible;
