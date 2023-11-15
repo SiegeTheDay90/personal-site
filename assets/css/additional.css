@@ -1,0 +1,68 @@
+@import url("fontawesome-all.min.css");
+
+#header img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+#blurb {
+    font-size: larger;
+}
+
+.major-icons{
+    display:  grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.colored {
+    transform: scale(3, 3);
+}
+.education img {
+    width: clamp(100px, 10vw, 300px);
+}
+
+#gmail{
+    position: relative;
+}
+
+section{
+    height: 100vh;
+}
+
+#two, #three, #four, #five{
+    padding-top: 10px;
+}
+
+#contact-list li{
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#four img {
+   /* max-height: 200px; */
+   object-fit: scale-down;
+}
+#four h3 {
+   margin: 0;
+}
+
+.project.image{
+    display: flex;
+    overflow: hidden;
+    height: clamp(200px, 10vh, 300px);
+}
+
+#copy{
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    left: 100%;
+    color: grey;
+    top: 0%;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
