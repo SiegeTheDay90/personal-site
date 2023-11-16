@@ -1,149 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
-    <script src="./dist/main.js" ></script>
-	<!-- <link rel="stylesheet" href="./dist/styles.css" />  -->
-    <head>
-        <title>Clarence Smith</title>
-        <meta charset="UTF-8">
-        <script src="https://kit.fontawesome.com/a65848e44c.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="./images/favicon.ico" type="image/png">
-    </head>
-      
-    <body id="body">
-		<aside id="navbar">
-			<nav id="navlinks">
-				<a href="#one" class="active">About Me</a>
-				<a href="#two">Projects</a>
-				<a href="#three">Skills</a>
-			</nav>
-		</aside>
-		<main>
-			<ul id="contacts-box">
-				<a href="#" id="gmail"><li><i class="contact fa-solid fa-envelope"></i>Gmail</li>
-					<p id="copy">Email Address <br> Copied to Clipboard</p>
-				</a>
-				<a href="https://www.linkedin.com/in/clarence-smith-nyc/" target="_blank"><li><i class="contact fa-brands fa-linkedin"></i>LinkedIn</li></a>
-				<a href="https://github.com/SiegeTheDay90" target="_blank"><li><i class="contact fa-brands fa-github"></i>Github</li></a>
-			</ul>
-			<section class="page" id="one">
-				<section class="main-text">
-					<h1><glow>Clarence Smith</glow></h1>
-					<p><i>Frontend developer and educator</i></p>
-					<p>Hi there! I'm Clarence Smith, a passionate software developer and educator with a strong commitment to creating innovative solutions and sharing knowledge.<br><br>
-						
-					My d	eep love for problem-solving and creative thinking fuels my passion for software development. I thrive on tackling complex challenges, designing elegant solutions, and continually expanding my skill set. I believe in the power of technology to transform lives and industries, and I'm dedicated to contributing to that transformation.</p>
-					<p>Check out <a href="#two">my projects</a> or go straight to <a href="#three">skills</a> to see some of the tools I've used.</p>
-				</section>
-				<img class="thumbnail rounded" src="./images/profile.png" alt="Clarence"/>
-			</section>
-			<section class="page" id="two">
-				<section class="main-text">
-					<h1>Projects</h1>
-					<p>A collection of projects including full stack web apps and vanillaJS browser apps.</p>
-				</section>
-				<div id="projects-grid">
-					<a  href="https://siegetheday90.github.io/Interceptor/" target="_blank" class="projects-grid-item">
-						<p class="projects-title">Interceptor</p>
-						<div class="img-container"><img class="projects-thumbnail" src="./images/interceptor.gif"></img></div>
-						<p class="projects-blurb">Browser Game</p>
-						<ul class="projects-technologies">
-							<li class="project-technologies-item">VanillaJS</li>
-							<li class="project-technologies-item">HTML5 Canvas</li>
-							<li class="project-technologies-item">Google Firebase</li>
-							<li class="project-technologies-item">requestAnimationFrame</li>
-							<li class="project-technologies-item">Paint 3D</li>
-						</ul>
-					</a>
-					<a  href="https://trnkt-2022.herokuapp.com/" target="_blank" class="projects-grid-item">
-						<p class="projects-title">Trnkt</p>
-						<div class="img-container"><img class="projects-thumbnail" src="images/TrnktDemo.gif"></img></div>
-						<p class="projects-blurb">E-Commerce App</p>
-						<ul class="projects-technologies">
-							<li class="project-technologies-item">React</li>
-							<li class="project-technologies-item">PostgreSQL</li>
-							<li class="project-technologies-item">Ruby on Rails</li>
-							<li class="project-technologies-item">AWS S3</li>
-							<li class="project-technologies-item">Heroku</li>
-						</ul>					
-					</a>
-					<a  href="https://siegetheday90.github.io/Pokedex-D3/" target="_blank" class="projects-grid-item">
-						<p class="projects-title">PokedexD3</p>
-						<div class="img-container"><img class="projects-thumbnail" src="./images/pokedex.gif"></img></div>
-						<p class="projects-blurb">Data Visualization</p>
-						<ul class="projects-technologies">
-							<li class="project-technologies-item">VanillaJS</li>
-							<li class="project-technologies-item">PokéAPI</li>
-							<li class="project-technologies-item">D3.js</li>
-						</ul>
-					</a>
-					<a  href="https://team-connect.herokuapp.com/" target="_blank" class="projects-grid-item">
-						<p class="projects-title">Team Connect</p>
-						<div class="img-container"><img class="projects-thumbnail" src="./images/team_conect.png"></img></div>
-						<p class="projects-blurb">Team Management App</p>
-						<ul class="projects-technologies">
-							<li class="project-technologies-item">React</li>
-							<li class="project-technologies-item">Google Maps JS API</li>
-							<li class="project-technologies-item">PostgreSQL</li>
-							<li class="project-technologies-item">Ruby on Rails</li>
-						</ul>
-					</a>
-					<a  href="https://siegetheday90.github.io/infinite-run/dist/" target="_blank" class="projects-grid-item">
-						<p class="projects-title">RUN</p>
-						<div class="img-container"><img class="projects-thumbnail" src="./images/run.gif"></img></div>
-						<p class="projects-blurb">Browser Game</p>
-						<ul class="projects-technologies">
-							<li class="project-technologies-item">VanillaJS</li>
-							<li class="project-technologies-item">HTML5 Canvas</li>
-							<li class="project-technologies-item">requestAnimationFrame</li>
-						</ul>
-					</a>
-					<a  href="https://rising-sign.onrender.com/" target="_blank" class="projects-grid-item">
-						<p class="projects-title">Rising Sign</p>
-						<div class="img-container"><img class="projects-thumbnail" src="./images/risingsign.gif"></img></div>
-						<p class="projects-blurb">Social Media App</p>
-						<ul class="projects-technologies">
-							<li class="project-technologies-item">React</li>
-							<li class="project-technologies-item">MongoDB</li>
-							<li class="project-technologies-item">Express.js</li>
-							<li class="project-technologies-item">Websockets</li>
-						</ul>
-					</a>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Clarence Smith</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/additional.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+		<script src="https://kit.fontawesome.com/a65848e44c.js" crossorigin="anonymous"></script>
+		<script src="assets/js/additional.js"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<img src="images/profile.png" />
+					<h1>Clarence Smith</h1>
+					<p>Software Engineer</p>
+					<ul class="actions special">
+						<li><a href="#one" class="button scrolly">Learn More</a></li>
+					</ul>
 				</div>
 			</section>
-			<section class="page" id="three">
-				<section class="main-text">
-					<h1>Skills</h1>
-					<p>Ask me about...</p>
-				</section>
-				<ul id="skills-list">
-					<li class="skills-list-item">
-						<i class="icon fa-brands fa-stack-overflow"></i>Full Stack Development
-					</li>
-					<li class="skills-list-item">
-						<i class="icon fa-brands fa-react"></i>React
-					</li>
-					<li class="skills-list-item">
-						<svg class="icon" viewBox="0 -6 32 32" xmlns="http://www.w3.org/2000/svg">
-							<g fill="none" fill-rule="evenodd">
-							<path d="M0-6h32v32H0z"/>
-							<path fill="#c00" fill-rule="nonzero" d="M.985 19.636s.422-4.163 3.375-9.087c2.954-4.924 7.99-8.65 12.083-9.017 8.144-.816 15.46 6.485 15.46 6.485s-.24.168-.494.38C23.42 2.49 18.54 5.274 17.005 6.02c-7.033 3.925-4.91 13.616-4.91 13.616H.987zM24.137 2.32c-.45-.182-.9-.35-1.364-.505l.056-.93c.885.254 1.237.423 1.363.493l-.056.943zM22.8 5.304c.45.028.915.084 1.393.183l-.056.872c-.464-.1-.928-.155-1.392-.17l.056-.885zM17.597.913c-.407 0-.815.015-1.223.058l-.268-.83c.465-.056.915-.084 1.35-.084l.282.858h-.14zm.676 5.178c.35-.154.76-.31 1.237-.45l.31.93c-.41.125-.817.294-1.225.49l-.323-.97zm-6.386-3.7c-.366.184-.718.395-1.083.62l-.647-.985c.38-.225.745-.42 1.097-.604l.633.97zm2.883 6.33c.252-.323.548-.646.87-.942l.634.957c-.31.323-.59.647-.83 1L14.77 8.72zm-2.04 4.53c.112-.506.24-1.027.422-1.547l1.012.802c-.14.548-.24 1.097-.295 1.645l-1.14-.9zM6.57 6.57c-.34.35-.662.73-.958 1.11L4.53 6.752c.323-.352.674-.704 1.04-1.055l1 .872zm-4.25 6.286c-.224.52-.52 1.21-.702 1.688L0 13.954c.14-.38.436-1.084.703-1.69l1.618.592zm10.2 3.967l1.518.548c.084.663.21 1.28.337 1.83l-1.688-.605c-.07-.422-.14-1.027-.168-1.772z"/>
-							</g>	
-							</svg> Ruby on Rails
-					</li>
-					<li class="skills-list-item">
-						<i class="icon fa-brands fa-sass"></i>  Sass	
-					</li>
-					<li class="skills-list-item">
-						<i class="icon fa-solid fa-database"></i>  SQL & NoSQL	
-					</li>
-					<li class="skills-list-item">
-						<i class="icon fa-solid fa-sitemap"></i>  Data Structures & Algorithms
-					</li>
-				</ul>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-9 col-12-medium">
+							<header class="major">
+								<h2>About Me</h2>
+							</header>
+							<p id="blurb">I'm a talented software developer with a strong commitment to creating innovative solutions and helping people. My deep love for problem-solving and creative thinking fuels my passion for software development. I thrive on tackling complex challenges, designing elegant solutions, and continually expanding my skill set. I believe in the power of technology to transform lives and industries, and I'm dedicated to contributing to that transformation.
+							<br><br>
+							In my free time, I like to play video games and learning about tools used in game development or emulation. I love retro games!
+							</p>
+						</div>
+						<div class="col-3 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/profile.png" alt="" /></span>
+							<ul id="contact-list">
+								<a id="gmail"><li><i class="contact fa-solid fa-envelope"></i> | ClarenceSmith90</li>
+									<p id="copy">Copied to Clipboard</p>
+								</a>
+								<a href="https://www.linkedin.com/in/clarence-smith-nyc/" target="_blank">
+									<li><i class="contact fa-brands fa-linkedin"></i> | Clarence-Smith-NYC</li>
+								</a>
+								<a href="https://github.com/SiegeTheDay90" target="_blank">
+									<li><i class="contact fa-brands fa-github"></i> | SiegeTheDay90</li>
+								</a>
+								<a href="https://drive.google.com/file/d/1DnVMcAmoNlQeJEFy_lEtLjqNc4S-7mDR/view" target="_blank">
+									<li><i class="contact fa-solid fa-note-sticky"></i> | Resume</li>
+								</a>
+							</ul>
+						</div>
+					</div>
+					<ul class="actions special">
+						<li><a href="#two" class="button scrolly">My Skills</a></li>
+					</ul>
+				</div>
 			</section>
-		</main>
-    </body>
 
+			<!-- Two -->
+			<section id="two" class="main style1">
+				<div id="skill-container" class="container">
+					<header class="major">
+						<h2>Skills</h2>
+					</header>
+					<div>
+						<ul class="major-icons">
+							<li><i class="devicon-react-original colored"></i><div class="shrinky">ReactJS</div></li>
+							<li><i class="devicon-javascript-plain colored"></i><div class="shrinky">JavaScript</div></li>
+							<li><i class="devicon-rails-plain colored"></i><div class="shrinky">Rails</div></li>
+							<li><i class="devicon-amazonwebservices-original colored"></i><div class="shrinky">AWS</div></li>
+							<li><i class="devicon-mongodb-plain colored"></i><div class="shrinky">MongoDB</div></li>
+							<li><i class="devicon-firebase-plain colored"></i><div class="shrinky">Firebase</div></li>
+							<li><i class="devicon-python-plain colored"></i><div class="shrinky">Python</div></li>
+							<li><i class="devicon-d3js-plain colored"></i><div>D3.js</div></li>
+							<li><i class="devicon-google-plain colored"></i><div class="shrinky">Maps</div></li>
+							<!-- <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" /><div class="shrinky">Maps</div></li> -->
+							<li><i class="devicon-postgresql-plain colored"></i><div class="shrinky">PostgreSQL</div></li>
+							<li><i class="devicon-redux-original colored"></i><div class="shrinky">Redux</div></li>
+							<li><i class="devicon-npm-original-wordmark colored"></i><div class="shrinky">npm</div></li>
+							<li><i class="devicon-heroku-plain colored"></i><div class="shrinky">Heroku</div></li>
+							<li><i class="devicon-git-plain colored"></i><div class="shrinky">Git</div></li>
+							<li><i class="devicon-html5-plain colored"></i><div class="shrinky">HTML5</div></li>
+							<li><i class="devicon-css3-plain colored"></i><div class="shrinky">CSS3</div></li>
+							<li><i class="devicon-bootstrap-plain colored"></i><div class="shrinky">Bootstrap</div></li>
+							<li><i class="devicon-devicon-plain"></i><div class="shrinky">Node.js</div></li>
+
+							
+						</ul>
+					</div>
+					<ul class="actions special">
+						<li><a href="#three" class="button scrolly">Education</a></li>
+					</ul>
+				</div>
+			</section>
+			
+
+		<!-- Three -->
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Education</h2>
+					</header>
+					<div class="education row gtr-150">
+						<div class="col-6 col-6-medium">
+							<span class="image"><img src="images/hunter.png" alt="Hunter" /></span>
+							<h3>CUNY Hunter</h3>
+							<p style="margin-bottom:0">BA in Mathematics</p>
+							<p style="margin-bottom:0">Computer Science Minor (Python/SQL)</p>
+							<p>MA in Adolescent Education</p>
+						</div>
+						<div class="col-6 col-6-medium">
+							<span class="image"><img src="images/aa.png" alt="App Academy" /></span>
+							<h3>App Academy</h3>
+							<p>Full-Stack Software Engineering</p>
+						</div>
+					</div>
+					<ul class="actions special">
+						<li><a href="#four" class="button scrolly">Projects</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Adipiscing amet consequat</h2>
+					</header>
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium">
+							<span class="project image fit"><img src="images/interceptor.gif" /></span>
+							<h3 class="mb-2">Interceptor</h3>
+							<p>A fully-featured browser game!</p>
+							<ul class="actions special">
+								<li><a href="https://siegetheday90.github.io/Interceptor/" class="button">Play</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="project image fit"><img src="images/TrnktDemo.gif" /></span>
+							<h3 class="mb-1">Trnkt</h3>
+							<p>An e-commerce React App</p>
+							<ul class="actions special">
+								<li><a href="https://trnkt-2022.herokuapp.com/" class="button">Demo</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<span class="project image fit"><img src="images/clhelper-02.gif" /></span>
+							<h3 class="mb-1">WriteWise</h3>
+							<p>AI Cover Letters</p>
+							<ul class="actions special">
+								<li><a href="https://write-wise-4d2bfd5abb7a.herokuapp.com/" class="button">Try It</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="actions special">
+						<li><a href="#header" class="button scrolly">Back To Top</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<!-- <section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
-
