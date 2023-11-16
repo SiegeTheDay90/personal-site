@@ -14,8 +14,13 @@
     grid-template-columns: auto auto auto auto auto auto;
 }
 
+.major-icons li {
+    /* border: 1px solid red; */
+    padding: 0 !important;
+    height: clamp(30px, 20vh, 150px)
+}
 .colored {
-    transform: scale(3, 3);
+    font-size: clamp(20px, 5rem, 50px)
 }
 .education img {
     width: clamp(100px, 10vw, 300px);
@@ -65,4 +70,14 @@ section{
     padding: 3px;
     border-radius: 5px;
     text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    #one img{
+        display: none;
+    }
+
+    section{
+        height: max-content;
+    }
 }
