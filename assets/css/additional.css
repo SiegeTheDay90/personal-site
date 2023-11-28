@@ -30,9 +30,7 @@
     position: relative;
 }
 
-section{
-    height: 100vh;
-}
+
 
 #two, #three, #four, #five{
     padding-top: 10px;
@@ -80,4 +78,27 @@ section{
     section{
         height: max-content;
     }
+}
+
+section{
+    margin-bottom: 200px;
+    height: max-content;
+    padding-bottom: 10px !important;
+}
+
+section:last-of-type{
+    margin-bottom: 0;
+}
+
+#header{
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: #4686a0;
+    background-attachment: fixed,							fixed,							fixed;
+    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background-position: top left,						center center,					center center;
+    background-size: auto,							cover,							cover;
 }
