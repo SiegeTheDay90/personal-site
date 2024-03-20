@@ -32,8 +32,12 @@
 
 
 
-#two, #three, #four, #five{
+#one, #three, #four, #five{
     padding-top: 10px;
+}
+
+#two {
+    padding: 2em 0 2em 0;
 }
 
 #contact-list li{
