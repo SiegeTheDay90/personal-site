@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     document.querySelector('#gmail').addEventListener('click', (e) => {
         navigator.clipboard.writeText("ClarenceSmith90@gmail.com");
         const popup = document.querySelector('#copy');
